@@ -10,7 +10,7 @@
         </script>
     </head>
     <body>
-        <div id="myid"></div>
+        <p id="myid"></p>
         <script>
             //I can write the JS code before the closing body tag
             var student1={  
@@ -41,7 +41,7 @@
             */
             for (key in student1){ //key = Properties
                alert(student1[key]);
-              //document.getElementById("myid").innerHTML = student1[`${key}`];
+              //document.getElementById("myid").innerHTML = key; 
             }
         </script>
         <script>
@@ -60,7 +60,8 @@
            let childrens = ["Yash"+'  '+'Kavya'+" "+"Raj"+" "+`Lavi`]; //Array
 
            for(children of childrens){
-            document.write(children)
+            //document.write(children)
+            document.getElementById("myid").innerHTML = children;
            }
         </script>
     </body>
