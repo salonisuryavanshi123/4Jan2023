@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS For in loop statement</title>
+        <script>
+            //I can write the JS code before the closing of head tag
+        </script>
+    </head>
+    <body>
+        <div id="myid"></div>
+        <script>
+            //I can write the JS code before the closing body tag
+            var student1={  
+                //Property:Value
+                name:"Sneha",  //String
+                surname:"Yadav", //String
+                address:'Bhopal',  //String
+                contact:945735694,  //Number
+                friend:["Reena",'Teena',`Mena`] //[] this is Array
+            } //{} this is object
+
+            /*
+            {
+                1. Property:Value
+                2. Method
+            }
+            */
+           /*
+           for (key in object){
+                //code block to be executed
+           }
+           */
+            //There are three ways to access js object value
+            /*
+            1. objectName.property
+            2. objectName["property"]
+            3. objectName[expression]
+            */
+            for (key in student1){ //key = Properties
+               alert(student1[key]);
+              //document.getElementById("myid").innerHTML = student1[`${key}`];
+            }
+        </script>
+        <script>
+            //For of
+
+            const name="SALONI MODI";
+            /*
+            for(variable of iterable){
+                //code block to be executed
+            }
+            */
+           for(a of name){
+            console.log(a);
+           }
+
+           let childrens = ["Yash"+'  '+'Kavya'+" "+"Raj"+" "+`Lavi`]; //Array
+
+           for(children of childrens){
+            document.write(children)
+           }
+        </script>
+    </body>
+</html>
